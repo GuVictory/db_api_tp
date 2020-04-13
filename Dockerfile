@@ -62,5 +62,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 5000
-ENV PGPASSWORD docker
+ENV PGPASSWORD postgres
 CMD service postgresql start && psql -h localhost -d forum -U farcoad -p 5432 -a -q -f ./postgres/init.sql && node ./src/index.js

@@ -4,8 +4,8 @@ const { Pool } = require('pg')
 
 const pool = new Pool({
   host: 'localhost',
-  user: 'docker',
-  password: 'docker',
+  user: 'root',
+  password: 'postgres',
   port: '5432',
   database: 'forum_api_tp',
   max: 20,
