@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 FROM ubuntu:18.04
 
-MAINTAINER Howle
+MAINTAINER vi.gubanova
 
 ENV TZ=Russia/Moscow
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
